@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rtmécapro</title>
+    <style>
+        body {
+            font-family: "Geneva", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        header {
+            background-color: #0c0c0c; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background-color: #0c0c0c; 
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #055285;
+        }
+        section {
+            padding: 20px;
+            flex: 1; 
+            overflow: auto; 
+        }
+        footer {
+            background-color: #0c0c0c; 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1, h2 {
+            color: #055285; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff; 
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #map-container {
+            display: flex; 
+            flex: 1; 
+            justify-content: center;
+            align-items: center; 
+        }
+        #map {
+            height: 80%; 
+            width: 80%; 
+        }
+        #text-container {
+            display: flex; 
+            flex: 1; 
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        #text-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #text-container p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="310" height="160" alt="Logo">
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html">Services</a>
+        <a href="reservation/rendezvous.html">Prendre rendez-vous </a>
+        <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoyer un email</title>
+</head>
+<body>
+<a href="mailto:rtmecapro.outlook.fr?subject=">Envoyer un email</a>
+
+    </nav>
+    <section>
+        <div id="text-container">
+            <h1>Localisation de notre entreprise</h1>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </section>
+ 
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Localisation</title>
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+
+    <script>
+        function initMap() {
+            var myLatLng = {lat: 47.659820, lng: 6.559347}; 
+    
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: myLatLng
+            });
+    
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Localisation de notre entreprise'
+            });
+        }
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLawoGDpj2P7z8qPA4UOeqBoT3Ti-VPWc&callback=initMap"></script>
+    
+    </body>
+    </html>
+<footer>  
+    <p>&copy; 2024 RTMécapro. Tous droits réservés.</p>
+</footer>

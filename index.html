@@ -3,100 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garage Mécanique</title>
+    <title>rtmécapro</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Geneva", Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            background-color: #fff; 
         }
         header {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #333;
+            background-color: #0c0c0c; 
             color: #fff;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         }
         nav {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #444;
-            padding: 10px 0;
+            background-color: #0c0c0c; 
+            padding: 10px;
             text-align: center;
         }
         nav a {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #555;
+            background-color: #055285; /* Couleur bleu foncé au survol */
         }
         section {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
-            margin: 20px;
-            background-color: #fff;
         }
         footer {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #333;
+            background-color: #0c0c0c; 
             color: #fff;
             text-align: center;
-            padding: 1px;
+            padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        h1, h2 {
+            color: #055285; 
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fff; 
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" width="310" height="160" alt="Logo">
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="reservation/rendezvous.html">Prendre rendez-vous </a>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envoyer un email</title>
+</head>
+<body>
+<a href="mailto:rtmecapro.outlook.fr?subject=">Envoyer un email</a>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <style>
+        .pin-icon {
+            width: 70px;
+            height: 70px;
+            background-color: #0c0c0c;
+            display: inline-block;
+            text-align: center;
+            line-height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            float: right; 
+            margin-right: 10px; 
+            margin-top: 9px; 
+        }
+        .icon-container {
+            position: relative;
         }
     </style>
 </head>
 <body>
 
-<header>
- <img src="images/logo.png" width="310" height="160"/>
-</header>
+<div class="icon-container">
+    <div class="pin-icon" onclick="window.location.href='carte.html'">
+        <img src="images/icon.png" width="50" height="55" alt="Icône d'épingle">
+    </div>
+</div>
 
-<nav>
-    <a href="#">Accueil</a>
-    <a href="#">Services</a>
-    <a href="#">À propos</a>
-    <a href="#">Contact</a>
-</nav>
+</body>
+</html>
 
-<section>
-    <h2>Nos Services</h2>
-    <ul>
-        <li>Révision</li>
-        <li>Freinage</li>
-        <li>Transmission</li>
-        <li>Liaison au sol</li>
-        <li>Montage de pneus</li>
-        <li>Courroire de distribution</li>
-    </ul>
-</section>
 
-<section>
-    <h2>À Propos de Nous</h2>
-    <p>Nous sommes un garage mécanique spécialisé dans l'entretien et la réparation de véhicules de marque française.</p>
-</section>
+</body>
+</html>
+    </nav>
+    <section id="accueil">
+        <h2>Bienvenue chez RTmécapro</h2>
+        <p>Nous sommes spécialisés dans la réparation et l'entretien de véhicules de marques française.</p>
+        <p>Contactez-nous dès aujourd'hui pour prendre rendez-vous !</p>
+    </section>
+    <section id="services">
+        <h2>Nos Services</h2>
+        <ul>
+            <li>Révision</li>
+            <li>Freinage</li>
+            <li>Transmission</li>
+            <li>Liaison au sol</li>
+            <li>Montage de pneus</li>
+            <li>Courroie de distributions</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Adresse: 15 rue de la tuilerie, 70200</p>
+        <p>Téléphone: +33634481319</p>
+        <p>Email: rtmecapro@outlook.fr</p>
+    </section>
 
-<section>
-    <h2>Redirection vers une autre page</h2>
-    <p>Cliquez sur le lien ci-dessous pour être redirigé vers une autre page :</p>
-    <a href="reservation/rendezvous.html"> Cliquer ici pour prendre rendez-vous</a>
-</section>
-
-<section>
-    <h2>Nous Contacter</h2>
-    <p>Adresse: 15 rue de la tuilerie 70200</p>
-    <p>Téléphone: +33634481319</p>
-    <p>Email: rtmecapro@hotmail.com</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Garage Mécanique</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Atelier de Mécanique. Tous droits réservés.</p>
+    </footer>
+    <section>
+        <h2></h2>, 
+        <p></p>
+    </section>
 </body>
 </html>
