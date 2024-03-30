@@ -1,31 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rtmécapro</title>
+        <style>
+            body {
+                font-family: "Geneva", Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #fff; 
+            }
+            header {
+                background-color: #0c0c0c; 
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            }
+            nav {
+                background-color: #0c0c0c; 
+                padding: 10px;
+                text-align: center;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                transition: background-color 0.3s ease;
+            }
+            nav a:hover {
+                background-color: #055285; /* Couleur bleu foncé au survol */
+            }
+            section {
+                padding: 20px;
+            }
+            footer {
+                background-color: #0c0c0c; 
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+            h1, h2 {
+                color: #055285; 
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            ul li {
+                margin-bottom: 10px;
+                padding: 10px;
+                background-color: #fff; 
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="../images/logo.png" width="310" height="160" alt="Logo">
+        </header>
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="../index.html">Services</a>
+            <a href="rendezvous.html">Prendre rendez-vous </a>
+            <a href="mailto:rtmecapro@outlook.fr?subject=">Envoyer un email</a>
+        </nav>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation de rendez-vous</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
         }
         section {
             padding: 20px;
-            margin: 20px auto;
-            max-width: 400px;
+            margin: 20px;
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
+            max-width: 400px;
+            margin: 0 auto;
         }
         label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         input[type="text"],
         input[type="email"],
@@ -33,23 +99,19 @@
         select,
         textarea {
             width: 100%;
-            padding: 10px;
+            padding: 8px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
         }
         input[type="submit"] {
             background-color: #333;
             color: #fff;
-            padding: 12px 20px;
+            padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-family: 'Roboto', sans-serif;
         }
         input[type="submit"]:hover {
             background-color: #555;
@@ -60,7 +122,7 @@
 
 <section>
     <h2>Réservation de rendez-vous</h2>
-    <form action="reservation.php" method="post">
+    <form action="php/index.php" method="post">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required><br>
         
@@ -92,3 +154,6 @@
 
 </body>
 </html>
+<footer>
+    <p>&copy; 2024 Atelier de Mécanique. Tous droits réservés.</p>
+</footer>
